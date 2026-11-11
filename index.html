@@ -2,11 +2,247 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>บริการรถเช่าราคาประหยัด</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการรถเช่าราคาประหยัด - ขับขี่ปลอดภัยทั่วไทย</title>
+    <style>
+        /* ตกแต่งหน้าตาภาพรวมของเว็บ (CSS) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 30px 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .car-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .btn-line {
+            display: inline-block;
+            background-color: #06C755;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-line:hover {
+            background-color: #05b24c;
+        }
+        /* สไตล์สำหรับปุ่มโซเชียลลอยมุมขวาล่าง */
+        .social-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .social-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 26px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .social-btn:hover {
+            transform: scale(1.1);
+        }
+        .fb-btn { background-color: #1877F2; }
+        .tiktok-btn { background-color: #000000; }
+        /* สไตล์สำหรับส่วนท้ายเว็บไซต์ (Footer แถบสีดำ) */
+        footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 40px 20px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-content h3 {
+            color: #aaaaaa;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .footer-content h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .footer-content p {
+            margin: 10px 0;
+            color: #dddddd;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .footer-content a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>ยินดีต้อนรับสู่ร้านรถเช่าของเรา</h1>
-    <p>รถใหม่ สะอาด ปลอดภัย พร้อมให้บริการตลอด 24 ชั่วโมง</p>
-    <a href="https://lin.ee/รหัสไลน์ของคุณ">ติดต่อจองรถผ่าน LINE</a>
+
+    <header>
+        <h1>THIANGTAM Car Rental 🚗</h1>
+        <p>บริการรถเช่า รายวัน สะอาด ปลอดภัย</p>
+    </header>
+
+    <div class="container">
+        <!-- ใส่ชื่อไฟล์รูปภาพรถของคุณตรงคำว่า src="..." -->
+        <img src="car1.jpg.jpg" alt="รูปรถเช่าของเรา" class="car-img">
+        
+        <h2>Toyota Veloz</h2>
+        <p>รถอเนกประสงค์ประเภท B-MPV / Crossover 7 ที่นั่ง</p>
+        
+        <div class="price">ราคาเพียง 800 บาท / วัน</div>
+        
+        <!-- เปลี่ยนลิงก์ lin.ee เป็น LINE ของคุณ -->
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+<!-- คันที่ 2 ต่อลงมาตรงนี้ -->
+    <div class="container">
+        <img src="car2.jpg.jpg" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Hyundai H-1</h2>
+        <p>รถตู้ VIP / MPV ขนาดใหญ่ 11 ที่นั่ง</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- กล่องรถคันที่ 2 -->
+    <div class="container">
+        <img src="car3.jpg.jpg" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Toyota Fortuner</h2>
+        <p>รถอเนกประสงค์ประเภท PPV (SUV พื้นฐานกระบะ) 7 ที่นั่ง</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- กล่องรถคันที่ 2 -->
+    <div class="container">
+        <img src="car4.jpg.jpg" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Isuzu D-Max</h2>
+        <p>รถกระบะ 4 ประตูยกสูง(Double Cab Hi-Lander)</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- กล่องรถคันที่ 2 -->
+    <div class="container">
+        <img src="car5.jpg.jpg" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Honda City Hatchback</h2>
+        <p>ประเภทรถ: รถเก๋ง 5 ประตู (Sub-compact Hatchback)</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- กล่องรถคันที่ 2 -->
+    <div class="container">
+        <img src="car6.jpg.jpg" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Mitsubishi Xpander</h2>
+        <p>รถอเนกประสงค์ประเภท MPV 7 ที่นั่ง</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- กล่องรถคันที่ 2 -->
+    <div class="container">
+        <img src="car7.jpg.jpg" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Nissan Almera</h2>
+        <p>ประเภทรถ: รถเก๋ง 4 ประตู (Sub-compact Sedan / Eco Car)</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- กล่องรถคันที่ 2 -->
+    <div class="container">
+        <img src="car8.jpg.png" alt="รูปรถเช่าคันที่ 2" class="car-img">
+        
+        <h2>Toyota Yaris Ativ</h2>
+        <p>ประเภทรถ: รถเก๋ง 4 ประตู ทรง Fastback/Sedan</p>
+        
+        <div class="price">ราคาเพียง 900 บาท / วัน</div>
+        
+        <a href="https://line.me/ti/p/316KAUBrzY" class="btn-line" target="_blank">💬 จองรถผ่าน LINE ทันที</a>
+    </div>
+    <!-- แถบสีดำล่างสุด (Footer) -->
+    <footer>
+        <div class="footer-content">
+            <h3>CONTACT</h3>
+            <h2>ติดต่อเรา</h2>
+            <p>154/1 หมู่ 1 ตำบลบางรัก อำเภอเมืองตรัง จังหวัดตรัง 92000</p>
+            <p>📞 <a href="tel:0972465219">097-246-5219</a></p>
+            <p>📞 <a href="tel:0818874599">081-887-4599</a></p>
+            <p>💬 LINE : 0894708163</p>
+        </div>
+    </footer>
+    <!-- ปุ่มโซเชียลลอยตามหน้าจอ -->
+    <div class="social-float">
+        <!-- ปุ่ม Facebook (เปลี่ยนลิงก์ตรง href เป็นเฟซบุ๊กร้านคุณ) -->
+        <a href="https://www.facebook.com/profile.php?id=100090541886412&locale=th_TH" class="social-btn fb-btn" target="_blank" title="Facebook">
+            f
+        </a>
+        <!-- ปุ่ม TikTok (เปลี่ยนลิงก์ตรง href เป็น TikTok ร้านคุณ) -->
+        <a href="https://www.tiktok.com/@aunchalee.angjaru?is_from_webapp=1&sender_device=pc" class="social-btn tiktok-btn" target="_blank" title="TikTok">
+            tk
+        </a>
+    </div>
 </body>
 </html>
